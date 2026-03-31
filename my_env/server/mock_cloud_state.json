@@ -1,58 +1,55 @@
 {
-  "resources": [
-    {
-      "resource_id": "eip-001",
-      "resource_type": "ElasticIP",
+  "metadata": {
+    "account_id": "123456789012",
+    "monthly_budget_limit": 1000.00
+  },
+  "resources": {
+    "eip-001": {
+      "type": "ElasticIP",
       "status": "unattached",
       "monthly_cost": 3.60,
       "region": "us-east-1"
     },
-    {
-      "resource_id": "eip-002",
-      "resource_type": "ElasticIP",
+    "eip-002": {
+      "type": "ElasticIP",
       "status": "unattached",
       "monthly_cost": 3.60,
       "region": "us-west-2"
     },
-    {
-      "resource_id": "vol-001",
-      "resource_type": "EBS_Volume",
+    "vol-001": {
+      "type": "EBS_Volume",
       "status": "available",
       "size_gb": 100,
       "volume_type": "gp3",
       "monthly_cost": 8.00,
       "region": "us-east-1"
     },
-    {
-      "resource_id": "i-001",
-      "resource_type": "EC2_Instance",
+    "i-001": {
+      "type": "EC2_Instance",
       "instance_type": "t3.xlarge",
       "status": "running",
       "avg_cpu_percent": 3.2,
       "monthly_cost": 121.76,
       "region": "us-east-1"
     },
-    {
-      "resource_id": "i-002",
-      "resource_type": "EC2_Instance",
+    "i-002": {
+      "type": "EC2_Instance",
       "instance_type": "t3.large",
       "status": "running",
       "avg_cpu_percent": 85.4,
       "monthly_cost": 60.88,
       "region": "us-west-2"
     },
-    {
-      "resource_id": "i-003",
-      "resource_type": "EC2_Instance",
+    "i-003": {
+      "type": "EC2_Instance",
       "instance_type": "t3.xlarge",
       "status": "running",
       "avg_cpu_percent": 4.1,
       "monthly_cost": 121.76,
       "region": "eu-west-1"
     },
-    {
-      "resource_id": "vol-002",
-      "resource_type": "EBS_Volume",
+    "vol-002": {
+      "type": "EBS_Volume",
       "status": "in-use",
       "size_gb": 500,
       "volume_type": "io1",
@@ -61,13 +58,12 @@
       "monthly_cost": 325.00,
       "region": "us-east-1"
     },
-    {
-      "resource_id": "rds-001",
-      "resource_type": "RDS_Instance",
+    "rds-001": {
+      "type": "RDS_Instance",
       "status": "active",
       "instance_class": "db.t3.medium",
       "monthly_cost": 61.32,
       "region": "us-east-1"
     }
-  ]
+  }
 }
