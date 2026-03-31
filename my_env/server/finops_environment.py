@@ -100,9 +100,9 @@ class FinOpsEnvironment(Environment):
         }
         return instructions.get(self._current_task, "Optimize cloud infrastructure costs.")
 
-    def reset(self) -> FinOpsObservation:
+    def reset(self, episode_id: str = None, seed: int = None, **kwargs) -> FinOpsObservation:
         """Reset the environment to initial state."""
-        self._state = State(episode_id=str(uuid4()), step_count=0)
+        self._state = State(episode_id=episode_id or str(uuid4()), step_count=0)
         self._current_task = 1
         self._load_initial_state()
         self._current_savings = 0.0
