@@ -5,6 +5,10 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
+# OpenEnv WebSocket configuration
+ENV WORKERS=4
+ENV MAX_CONCURRENT_ENVS=100
+
 # Create a working directory inside the container
 WORKDIR /app
 
