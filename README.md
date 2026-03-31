@@ -6,7 +6,6 @@ colorTo: green
 sdk: docker
 pinned: false
 app_port: 7860
-base_path: /web
 tags:
   - openenv
   - finops
@@ -248,10 +247,12 @@ After deployment, your space will be available at:
 `https://huggingface.co/spaces/<repo-id>`
 
 The deployed space includes:
-- **Web Interface** at `/web` - Interactive UI for exploring the environment
 - **API Documentation** at `/docs` - Full OpenAPI/Swagger interface
 - **Health Check** at `/health` - Container health monitoring
 - **WebSocket** at `/ws` - Persistent session endpoint for low-latency interactions
+- **Reset Endpoint** at `/reset` - Reset the environment
+- **Step Endpoint** at `/step` - Execute actions
+- **State Endpoint** at `/state` - Get current state
 
 ## 📊 Baseline Results
 
