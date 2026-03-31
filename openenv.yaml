@@ -1,0 +1,6 @@
+spec_version: 1
+name: finops
+type: space
+runtime: fastapi
+app: my_env.server.app:app
+port: 7860

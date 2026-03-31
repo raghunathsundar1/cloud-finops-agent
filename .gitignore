@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+my_env/.venv/
+
+# Environment Variables (IMPORTANT: Keep credentials safe!)
+.env
+my_env/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Docker
+*.log

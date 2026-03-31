@@ -1,0 +1,50 @@
+{
+  "resources": [
+    {
+      "resource_id": "i-001",
+      "resource_type": "EC2_Instance",
+      "instance_type": "t3.micro",
+      "status": "running",
+      "avg_cpu_percent": 3.2,
+      "monthly_cost": 7.59,
+      "region": "us-east-1"
+    },
+    {
+      "resource_id": "i-002",
+      "resource_type": "EC2_Instance",
+      "instance_type": "t3.large",
+      "status": "running",
+      "avg_cpu_percent": 85.4,
+      "monthly_cost": 60.88,
+      "region": "us-west-2"
+    },
+    {
+      "resource_id": "i-003",
+      "resource_type": "EC2_Instance",
+      "instance_type": "t3.micro",
+      "status": "running",
+      "avg_cpu_percent": 4.1,
+      "monthly_cost": 7.59,
+      "region": "eu-west-1"
+    },
+    {
+      "resource_id": "vol-002",
+      "resource_type": "EBS_Volume",
+      "status": "in-use",
+      "size_gb": 500,
+      "volume_type": "gp3",
+      "provisioned_iops": 3000,
+      "max_iops_used": 800,
+      "monthly_cost": 130.00,
+      "region": "us-east-1"
+    },
+    {
+      "resource_id": "rds-001",
+      "resource_type": "RDS_Instance",
+      "status": "active",
+      "instance_class": "db.t3.medium",
+      "monthly_cost": 61.32,
+      "region": "us-east-1"
+    }
+  ]
+}
