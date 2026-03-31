@@ -52,6 +52,24 @@ app = create_app(
     max_concurrent_envs=4,  # Allow multiple concurrent sessions
 )
 
+# Add a root endpoint for testing
+@app.get("/")
+async def root():
+    """Root endpoint to verify the server is running."""
+    return {
+        "message": "Cloud FinOps Agent Environment",
+        "status": "running",
+        "endpoints": {
+            "docs": "/docs",
+            "health": "/health",
+            "reset": "/reset",
+            "step": "/step",
+            "state": "/state",
+            "schema": "/schema",
+            "websocket": "/ws"
+        }
+    }
+
 
 def main(host: str = "0.0.0.0", port: int = 8000):
     """
